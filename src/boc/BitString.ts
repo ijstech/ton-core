@@ -7,8 +7,6 @@
  */
 
 import { bitsToPaddedBuffer } from "./utils/paddedBits";
-import inspectSymbol from 'symbol.inspect';
-
 /**
  * BitString is a class that represents a bitstring in a buffer with a specified offset and length
  */
@@ -183,5 +181,4 @@ export class BitString {
             }
         }
     }
-    [inspectSymbol] = () => this.toString()
 }

@@ -6,7 +6,6 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import inspectSymbol from 'symbol.inspect';
 import { Dictionary, DictionaryKey, DictionaryKeyTypes, DictionaryValue } from '../dict/Dictionary';
 import { BitReader } from "./BitReader";
 import { beginCell } from "./Builder";
@@ -554,6 +553,4 @@ export class Slice {
     toString(): string {
         return this.asCell().toString();
     }
-
-    [inspectSymbol] = () => this.toString();
 }

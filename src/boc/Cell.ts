@@ -6,7 +6,6 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import inspectSymbol from 'symbol.inspect';
 import { BitString } from "./BitString";
 import { CellType } from "./CellType";
 import { Slice } from "./Slice";
@@ -239,6 +238,4 @@ export class Cell {
     asBuilder() {
         return beginCell().storeSlice(this.asSlice());
     }
-
-    [inspectSymbol] = () => this.toString();
 }

@@ -12,6 +12,7 @@
   "scripts": {
     "docs": "rm -fr docs && typedoc src/index.ts",
     "build": "rm -fr dist && tsc --declaration",
+    "buildLib": "node esbuild.bundle.js",
     "test": "jest --verbose --runInBand",
     "release": "yarn build && yarn test && yarn release-it --npm.yarn1"
   },
@@ -27,12 +28,14 @@
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "typedoc": "^0.25.12",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.3",
+    "esbuild": "0.13.13"
   },
   "peerDependencies": {
     "@ton/crypto": ">=3.2.0"
   },
   "dependencies": {
+    "Buffer": "^0.0.0",
     "symbol.inspect": "1.0.1"
   },
   "publishConfig": {
