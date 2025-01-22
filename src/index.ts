@@ -70,6 +70,9 @@ export { crc16 } from './utils/crc16';
 export { crc32c } from './utils/crc32c';
 export { base32Decode, base32Encode } from './utils/base32';
 export { getMethodId } from './utils/getMethodId';
+export { Maybe } from './utils/maybe';
 
 // Crypto
 export { safeSign, safeSignVerify } from './crypto/safeSign';
+
+export { paddedBufferToBits } from './boc/utils/paddedBits';
