@@ -9,7 +9,7 @@ import { Builder } from "../boc/Builder";
 import { Slice } from "../boc/Slice";
 import { Maybe } from "../utils/maybe";
 import { AccountStatusChange } from "./AccountStatusChange";
-export type TransactionStoragePhase = {
+export declare type TransactionStoragePhase = {
     storageFeesCollected: bigint;
     storageFeesDue?: Maybe<bigint>;
     statusChange: AccountStatusChange;

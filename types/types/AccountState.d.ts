@@ -8,15 +8,15 @@
 import { Builder } from "../boc/Builder";
 import { Slice } from "../boc/Slice";
 import { StateInit } from "./StateInit";
-export type AccountState = AccountStateUninit | AccountStateActive | AccountStateFrozen;
-export type AccountStateUninit = {
+export declare type AccountState = AccountStateUninit | AccountStateActive | AccountStateFrozen;
+export declare type AccountStateUninit = {
     type: 'uninit';
 };
-export type AccountStateActive = {
+export declare type AccountStateActive = {
     type: 'active';
     state: StateInit;
 };
-export type AccountStateFrozen = {
+export declare type AccountStateFrozen = {
     type: 'frozen';
     stateHash: bigint;
 };

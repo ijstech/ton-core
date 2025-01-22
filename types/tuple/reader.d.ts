@@ -5,6 +5,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
+/// <reference types="node" />
 import { TupleItem } from "./tuple";
 export declare class TupleReader {
     private readonly items;
@@ -28,8 +29,8 @@ export declare class TupleReader {
     private static readLispList;
     readLispListDirect(): TupleItem[];
     readLispList(): TupleItem[];
-    readBuffer(): Buffer<ArrayBufferLike>;
-    readBufferOpt(): Buffer<ArrayBufferLike>;
+    readBuffer(): Buffer;
+    readBufferOpt(): Buffer;
     readString(): string;
     readStringOpt(): string;
 }

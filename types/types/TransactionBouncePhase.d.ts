@@ -8,16 +8,16 @@
 import { Builder } from "../boc/Builder";
 import { Slice } from "../boc/Slice";
 import { StorageUsedShort } from "./StorageUsedShort";
-export type TransactionBouncePhase = TransactionBounceNegativeFunds | TransactionBounceNoFunds | TransactionBounceOk;
-export type TransactionBounceNegativeFunds = {
+export declare type TransactionBouncePhase = TransactionBounceNegativeFunds | TransactionBounceNoFunds | TransactionBounceOk;
+export declare type TransactionBounceNegativeFunds = {
     type: "negative-funds";
 };
-export type TransactionBounceNoFunds = {
+export declare type TransactionBounceNoFunds = {
     type: "no-funds";
     messageSize: StorageUsedShort;
     requiredForwardFees: bigint;
 };
-export type TransactionBounceOk = {
+export declare type TransactionBounceOk = {
     type: "ok";
     messageSize: StorageUsedShort;
     messageFees: bigint;

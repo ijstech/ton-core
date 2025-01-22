@@ -5,6 +5,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
+/// <reference types="node" />
 export declare class Address {
     static isAddress(src: any): src is Address;
     static isFriendly(source: string): boolean;
@@ -22,11 +23,11 @@ export declare class Address {
     constructor(workChain: number, hash: Buffer);
     toRawString: () => string;
     equals(src: Address): boolean;
-    toRaw: () => Buffer<ArrayBuffer>;
+    toRaw: () => Buffer;
     toStringBuffer: (args?: {
         bounceable?: boolean;
         testOnly?: boolean;
-    }) => Buffer<ArrayBuffer>;
+    }) => Buffer;
     toString: (args?: {
         urlSafe?: boolean;
         bounceable?: boolean;

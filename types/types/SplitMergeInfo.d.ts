@@ -7,7 +7,7 @@
  */
 import { Builder } from "../boc/Builder";
 import { Slice } from "../boc/Slice";
-export type SplitMergeInfo = {
+export declare type SplitMergeInfo = {
     currentShardPrefixLength: number;
     accountSplitDepth: number;
     thisAddress: bigint;

@@ -10,7 +10,7 @@ import { Slice } from "../boc/Slice";
 import { Dictionary, DictionaryValue } from "../dict/Dictionary";
 import { DepthBalanceInfo } from "./DepthBalanceInfo";
 import { ShardAccount } from "./ShardAccount";
-export type ShardAccountRef = {
+export declare type ShardAccountRef = {
     shardAccount: ShardAccount;
     depthBalanceInfo: DepthBalanceInfo;
 };

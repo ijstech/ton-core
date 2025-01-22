@@ -11,7 +11,7 @@ import { Maybe } from "../utils/maybe";
 import { MasterchainStateExtra } from "./MasterchainStateExtra";
 import { ShardAccountRef } from "./ShardAccounts";
 import { ShardIdent } from "./ShardIdent";
-export type ShardStateUnsplit = {
+export declare type ShardStateUnsplit = {
     globalId: number;
     shardId: ShardIdent;
     seqno: number;

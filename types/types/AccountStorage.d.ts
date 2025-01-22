@@ -9,7 +9,7 @@ import { Builder } from "../boc/Builder";
 import { Slice } from "../boc/Slice";
 import { AccountState } from "./AccountState";
 import { CurrencyCollection } from "./CurrencyCollection";
-export type AccountStorage = {
+export declare type AccountStorage = {
     lastTransLt: bigint;
     balance: CurrencyCollection;
     state: AccountState;

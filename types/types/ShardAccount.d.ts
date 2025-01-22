@@ -9,7 +9,7 @@ import { Builder } from "../boc/Builder";
 import { Slice } from "../boc/Slice";
 import { Maybe } from "../utils/maybe";
 import { Account } from "./Account";
-export type ShardAccount = {
+export declare type ShardAccount = {
     account?: Maybe<Account>;
     lastTransactionHash: bigint;
     lastTransactionLt: bigint;

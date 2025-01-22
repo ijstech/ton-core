@@ -5,6 +5,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
+/// <reference types="node" />
 import { Cell } from "../boc/Cell";
 import { SendMode } from "../types/SendMode";
 import { TupleReader } from "../tuple/reader";
@@ -16,7 +17,7 @@ import { Contract } from './Contract';
 import { Address } from "../address/Address";
 import { Transaction } from "../types/Transaction";
 import { OpenedContract } from "./openContract";
-export type ContractGetMethodResult = {
+export declare type ContractGetMethodResult = {
     stack: TupleReader;
     gasUsed?: Maybe<bigint>;
     logs?: Maybe<string>;

@@ -12,7 +12,7 @@ import { DictionaryValue } from "../dict/Dictionary";
 import { Maybe } from "../utils/maybe";
 import { CommonMessageInfo } from "./CommonMessageInfo";
 import { StateInit } from "./StateInit";
-export type Message = {
+export declare type Message = {
     info: CommonMessageInfo;
     init?: Maybe<StateInit>;
     body: Cell;

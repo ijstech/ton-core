@@ -10,7 +10,7 @@ import { Slice } from "../boc/Slice";
 import { Maybe } from "../utils/maybe";
 import { AccountStatusChange } from "./AccountStatusChange";
 import { StorageUsedShort } from "./StorageUsedShort";
-export type TransactionActionPhase = {
+export declare type TransactionActionPhase = {
     success: boolean;
     valid: boolean;
     noFunds: boolean;

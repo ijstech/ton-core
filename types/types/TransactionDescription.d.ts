@@ -15,8 +15,8 @@ import { TransactionBouncePhase } from "./TransactionBouncePhase";
 import { TransactionComputePhase } from "./TransactionComputePhase";
 import { TransactionCreditPhase } from "./TransactionCreditPhase";
 import { TransactionStoragePhase } from "./TransactionStoragePhase";
-export type TransactionDescription = TransactionDescriptionGeneric | TransactionDescriptionStorage | TransactionDescriptionTickTock | TransactionDescriptionSplitPrepare | TransactionDescriptionSplitInstall | TransactionDescriptionMergePrepare | TransactionDescriptionMergeInstall;
-export type TransactionDescriptionGeneric = {
+export declare type TransactionDescription = TransactionDescriptionGeneric | TransactionDescriptionStorage | TransactionDescriptionTickTock | TransactionDescriptionSplitPrepare | TransactionDescriptionSplitInstall | TransactionDescriptionMergePrepare | TransactionDescriptionMergeInstall;
+export declare type TransactionDescriptionGeneric = {
     type: "generic";
     creditFirst: boolean;
     storagePhase?: Maybe<TransactionStoragePhase>;
@@ -27,11 +27,11 @@ export type TransactionDescriptionGeneric = {
     aborted: boolean;
     destroyed: boolean;
 };
-export type TransactionDescriptionStorage = {
+export declare type TransactionDescriptionStorage = {
     type: "storage";
     storagePhase: TransactionStoragePhase;
 };
-export type TransactionDescriptionTickTock = {
+export declare type TransactionDescriptionTickTock = {
     type: "tick-tock";
     isTock: boolean;
     storagePhase: TransactionStoragePhase;
@@ -40,7 +40,7 @@ export type TransactionDescriptionTickTock = {
     aborted: boolean;
     destroyed: boolean;
 };
-export type TransactionDescriptionSplitPrepare = {
+export declare type TransactionDescriptionSplitPrepare = {
     type: "split-prepare";
     splitInfo: SplitMergeInfo;
     storagePhase?: Maybe<TransactionStoragePhase>;
@@ -49,19 +49,19 @@ export type TransactionDescriptionSplitPrepare = {
     aborted: boolean;
     destroyed: boolean;
 };
-export type TransactionDescriptionSplitInstall = {
+export declare type TransactionDescriptionSplitInstall = {
     type: "split-install";
     splitInfo: SplitMergeInfo;
     prepareTransaction: Transaction;
     installed: boolean;
 };
-export type TransactionDescriptionMergePrepare = {
+export declare type TransactionDescriptionMergePrepare = {
     type: "merge-prepare";
     splitInfo: SplitMergeInfo;
     storagePhase: TransactionStoragePhase;
     aborted: boolean;
 };
-export type TransactionDescriptionMergeInstall = {
+export declare type TransactionDescriptionMergeInstall = {
     type: "merge-install";
     splitInfo: SplitMergeInfo;
     prepareTransaction: Transaction;

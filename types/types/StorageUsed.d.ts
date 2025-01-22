@@ -7,7 +7,7 @@
  */
 import { Builder } from "../boc/Builder";
 import { Slice } from "../boc/Slice";
-export type StorageUsed = {
+export declare type StorageUsed = {
     cells: bigint;
     bits: bigint;
     publicCells: bigint;

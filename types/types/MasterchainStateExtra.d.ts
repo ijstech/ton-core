@@ -9,7 +9,7 @@ import { Cell } from "../boc/Cell";
 import { Slice } from "../boc/Slice";
 import { Dictionary } from "../dict/Dictionary";
 import { CurrencyCollection } from "./CurrencyCollection";
-export type MasterchainStateExtra = {
+export declare type MasterchainStateExtra = {
     configAddress: bigint;
     config: Dictionary<number, Cell>;
     globalBalance: CurrencyCollection;

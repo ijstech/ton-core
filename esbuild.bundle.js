@@ -19,14 +19,10 @@ async function build() {
       outdir: 'lib',
       bundle: true,
       minify: true,
-      format: 'iife',
+      format: 'cjs',
       // external: [...Object.keys(dependencies)],
-      globalName: 'TonCore',
       plugins: [],
       target: 'esnext',
-      define: {
-        global: 'window'
-      },
       inject: ['./buffer-shim.js'],
     })
     .catch(() => process.exit(1));
@@ -36,10 +32,8 @@ async function build() {
 define("@scom/ton-core", ["require", "exports"], function (require, exports) {
   Object.defineProperty(exports, "__esModule", { value: true }); 
   ${content}
-  if (typeof module !== "undefined" && module.exports) { module.exports = TonCore; } 
-    // exports.default = TonCore;
-    Object.assign(exports, TonCore)
 });`
-  Fs.writeFileSync('lib/index.js', content)
+
+  Fs.writeFileSync('lib/bundle.js', content)
 }
 build()

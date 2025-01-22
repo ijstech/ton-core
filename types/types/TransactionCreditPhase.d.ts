@@ -9,7 +9,7 @@ import { Builder } from "../boc/Builder";
 import { Slice } from "../boc/Slice";
 import { Maybe } from "../utils/maybe";
 import { CurrencyCollection } from "./CurrencyCollection";
-export type TransactionCreditPhase = {
+export declare type TransactionCreditPhase = {
     dueFeesColelcted?: Maybe<bigint>;
     credit: CurrencyCollection;
 };

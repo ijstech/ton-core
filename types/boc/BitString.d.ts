@@ -5,6 +5,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
+/// <reference types="node" />
 /**
  * BitString is a class that represents a bitstring in a buffer with a specified offset and length
  */
@@ -50,7 +51,7 @@ export declare class BitString {
      * @param length length in bits
      * @returns buffer if the bitstring is aligned to bytes, null otherwise
      */
-    subbuffer(offset: number, length: number): Buffer<ArrayBufferLike>;
+    subbuffer(offset: number, length: number): Buffer;
     /**
      * Checks for equality
      * @param b other bitstring

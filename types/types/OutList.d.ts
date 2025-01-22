@@ -32,7 +32,7 @@ export interface OutActionChangeLibrary {
     mode: number;
     libRef: LibRef;
 }
-export type OutAction = OutActionSendMsg | OutActionSetCode | OutActionReserve | OutActionChangeLibrary;
+export declare type OutAction = OutActionSendMsg | OutActionSetCode | OutActionReserve | OutActionChangeLibrary;
 export declare function storeOutAction(action: OutAction): (builder: Builder) => void;
 export declare function loadOutAction(slice: Slice): OutAction;
 export declare function storeOutList(actions: OutAction[]): (builder: Builder) => void;

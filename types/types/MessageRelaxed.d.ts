@@ -11,7 +11,7 @@ import { Slice } from "../boc/Slice";
 import { Maybe } from "../utils/maybe";
 import { CommonMessageInfoRelaxed } from "./CommonMessageInfoRelaxed";
 import { StateInit } from "./StateInit";
-export type MessageRelaxed = {
+export declare type MessageRelaxed = {
     info: CommonMessageInfoRelaxed;
     init?: Maybe<StateInit>;
     body: Cell;

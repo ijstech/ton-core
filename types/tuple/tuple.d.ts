@@ -6,32 +6,32 @@
  * LICENSE file in the root directory of this source tree.
  */
 import { Cell } from "../boc/Cell";
-export type Tuple = {
+export declare type Tuple = {
     type: 'tuple';
     items: TupleItem[];
 };
-export type TupleItemNull = {
+export declare type TupleItemNull = {
     type: 'null';
 };
-export type TupleItemInt = {
+export declare type TupleItemInt = {
     type: 'int';
     value: bigint;
 };
-export type TupleItemNaN = {
+export declare type TupleItemNaN = {
     type: 'nan';
 };
-export type TupleItemCell = {
+export declare type TupleItemCell = {
     type: 'cell';
     cell: Cell;
 };
-export type TupleItemSlice = {
+export declare type TupleItemSlice = {
     type: 'slice';
     cell: Cell;
 };
-export type TupleItemBuilder = {
+export declare type TupleItemBuilder = {
     type: 'builder';
     cell: Cell;
 };
-export type TupleItem = TupleItemNull | TupleItemInt | TupleItemNaN | TupleItemCell | TupleItemSlice | TupleItemBuilder | Tuple;
+export declare type TupleItem = TupleItemNull | TupleItemInt | TupleItemNaN | TupleItemCell | TupleItemSlice | TupleItemBuilder | Tuple;
 export declare function serializeTuple(src: TupleItem[]): Cell;
 export declare function parseTuple(src: Cell): TupleItem[];

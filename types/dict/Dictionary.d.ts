@@ -5,19 +5,20 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
+/// <reference types="node" />
 import { Address } from "../address/Address";
 import { Builder } from "../boc/Builder";
 import { Cell } from "../boc/Cell";
 import { Slice } from "../boc/Slice";
 import { BitString } from "../boc/BitString";
 import { Maybe } from "../utils/maybe";
-export type DictionaryKeyTypes = Address | number | bigint | Buffer | BitString;
-export type DictionaryKey<K extends DictionaryKeyTypes> = {
+export declare type DictionaryKeyTypes = Address | number | bigint | Buffer | BitString;
+export declare type DictionaryKey<K extends DictionaryKeyTypes> = {
     bits: number;
     serialize(src: K): bigint;
     parse(src: bigint): K;
 };
-export type DictionaryValue<V> = {
+export declare type DictionaryValue<V> = {
     serialize(src: V, builder: Builder): void;
     parse(src: Slice): V;
 };
@@ -57,7 +58,7 @@ export declare class Dictionary<K extends DictionaryKeyTypes, V> {
          * @param bytes number of bytes of a buffer
          * @returns DictionaryKey<Buffer>
          */
-        Buffer: (bytes: number) => DictionaryKey<Buffer<ArrayBufferLike>>;
+        Buffer: (bytes: number) => DictionaryKey<Buffer>;
         /**
          * Create BitString key
          * @param bits key length
@@ -123,7 +124,7 @@ export declare class Dictionary<K extends DictionaryKeyTypes, V> {
          * @param bytes number of bytes of a buffer
          * @returns DictionaryValue<Builder>
          */
-        Buffer: (bytes: number) => DictionaryValue<Buffer<ArrayBufferLike>>;
+        Buffer: (bytes: number) => DictionaryValue<Buffer>;
         /**
          * Create BitString value
          * @param requested bit length

@@ -7,7 +7,7 @@
  */
 import { Builder } from "../boc/Builder";
 import { Slice } from "../boc/Slice";
-export type ShardIdent = {
+export declare type ShardIdent = {
     shardPrefixBits: number;
     workchainId: number;
     shardPrefix: bigint;

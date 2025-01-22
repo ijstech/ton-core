@@ -11,8 +11,8 @@ import { Builder } from "../boc/Builder";
 import { Slice } from "../boc/Slice";
 import { Maybe } from "../utils/maybe";
 import { CurrencyCollection } from "./CurrencyCollection";
-export type CommonMessageInfoRelaxed = CommonMessageInfoRelaxedInternal | CommonMessageInfoRelaxedExternalOut;
-export type CommonMessageInfoRelaxedInternal = {
+export declare type CommonMessageInfoRelaxed = CommonMessageInfoRelaxedInternal | CommonMessageInfoRelaxedExternalOut;
+export declare type CommonMessageInfoRelaxedInternal = {
     type: 'internal';
     ihrDisabled: boolean;
     bounce: boolean;
@@ -25,7 +25,7 @@ export type CommonMessageInfoRelaxedInternal = {
     createdLt: bigint;
     createdAt: number;
 };
-export type CommonMessageInfoRelaxedExternalOut = {
+export declare type CommonMessageInfoRelaxedExternalOut = {
     type: 'external-out';
     src?: Maybe<Address>;
     dest?: Maybe<ExternalAddress>;

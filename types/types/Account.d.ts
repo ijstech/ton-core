@@ -10,7 +10,7 @@ import { Builder } from "../boc/Builder";
 import { Slice } from "../boc/Slice";
 import { AccountStorage } from "./AccountStorage";
 import { StorageInfo } from "./StorageInto";
-export type Account = {
+export declare type Account = {
     addr: Address;
     storageStats: StorageInfo;
     storage: AccountStorage;

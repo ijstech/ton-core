@@ -6,10 +6,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 import { Maybe } from "../utils/maybe";
-export type ABIError = {
+export declare type ABIError = {
     message: string;
 };
-export type ABITypeRef = {
+export declare type ABITypeRef = {
     kind: 'simple';
     type: string;
     optional?: Maybe<boolean>;
@@ -22,26 +22,26 @@ export type ABITypeRef = {
     value: string;
     valueFormat?: Maybe<string | number | boolean>;
 };
-export type ABIField = {
+export declare type ABIField = {
     name: string;
     type: ABITypeRef;
 };
-export type ABIType = {
+export declare type ABIType = {
     name: string;
     header?: Maybe<number>;
     fields: ABIField[];
 };
-export type ABIArgument = {
+export declare type ABIArgument = {
     name: string;
     type: ABITypeRef;
 };
-export type ABIGetter = {
+export declare type ABIGetter = {
     name: string;
     methodId?: Maybe<number>;
     arguments?: Maybe<ABIArgument[]>;
     returnType?: Maybe<ABITypeRef>;
 };
-export type ABIReceiverMessage = {
+export declare type ABIReceiverMessage = {
     kind: 'typed';
     type: string;
 } | {
@@ -52,11 +52,11 @@ export type ABIReceiverMessage = {
     kind: 'text';
     text?: Maybe<string>;
 };
-export type ABIReceiver = {
+export declare type ABIReceiver = {
     receiver: 'internal' | 'external';
     message: ABIReceiverMessage;
 };
-export type ContractABI = {
+export declare type ContractABI = {
     name?: Maybe<string>;
     types?: Maybe<ABIType[]>;
     errors?: Maybe<{

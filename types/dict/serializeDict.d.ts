@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 import { Builder } from "../boc/Builder";
-type Node<T> = {
+declare type Node<T> = {
     type: 'fork';
     left: Edge<T>;
     right: Edge<T>;
@@ -14,7 +14,7 @@ type Node<T> = {
     type: 'leaf';
     value: T;
 };
-type Edge<T> = {
+declare type Edge<T> = {
     label: string;
     node: Node<T>;
 };

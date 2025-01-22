@@ -7,7 +7,7 @@
  */
 import { Builder } from "../boc/Builder";
 import { Slice } from "../boc/Slice";
-export type AccountStatus = 'uninitialized' | 'frozen' | 'active' | 'non-existing';
+export declare type AccountStatus = 'uninitialized' | 'frozen' | 'active' | 'non-existing';
 /**
  * Load account state from slice
  * @param slice

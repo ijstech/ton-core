@@ -9,12 +9,12 @@ import { Builder } from "../boc/Builder";
 import { Slice } from "../boc/Slice";
 import { Maybe } from "../utils/maybe";
 import { ComputeSkipReason } from "./ComputeSkipReason";
-export type TransactionComputePhase = TransactionComputeSkipped | TransactionComputeVm;
-export type TransactionComputeSkipped = {
+export declare type TransactionComputePhase = TransactionComputeSkipped | TransactionComputeVm;
+export declare type TransactionComputeSkipped = {
     type: 'skipped';
     reason: ComputeSkipReason;
 };
-export type TransactionComputeVm = {
+export declare type TransactionComputeVm = {
     type: 'vm';
     success: boolean;
     messageStateUsed: boolean;

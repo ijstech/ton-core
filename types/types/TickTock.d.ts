@@ -7,7 +7,7 @@
  */
 import { Builder } from "../boc/Builder";
 import { Slice } from "../boc/Slice";
-export type TickTock = {
+export declare type TickTock = {
     tick: boolean;
     tock: boolean;
 };

@@ -6,6 +6,6 @@
  * LICENSE file in the root directory of this source tree.
  */
 import { Builder } from "./Builder";
-export type Writable = {
+export declare type Writable = {
     writeTo: (builder: Builder) => void;
 };

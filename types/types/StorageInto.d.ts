@@ -9,7 +9,7 @@ import { Builder } from "../boc/Builder";
 import { Slice } from "../boc/Slice";
 import { Maybe } from "../utils/maybe";
 import { StorageUsed } from "./StorageUsed";
-export type StorageInfo = {
+export declare type StorageInfo = {
     used: StorageUsed;
     lastPaid: number;
     duePayment?: Maybe<bigint>;

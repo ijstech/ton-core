@@ -10,7 +10,7 @@ import { Cell } from "../boc/Cell";
 import { SendMode } from "../types/SendMode";
 import { StateInit } from "../types/StateInit";
 import { Maybe } from "../utils/maybe";
-export type SenderArguments = {
+export declare type SenderArguments = {
     value: bigint;
     to: Address;
     sendMode?: Maybe<SendMode>;
