@@ -1,25 +1,15 @@
-# 💎 @ton/core
+## Setup and Installation
 
-Core TypeScript library that implements low level primitives for TON blockchain.
+To get started, follow these steps:
 
-## How to install
+### 1: Install the required packages using the following command:
 
 ```bash
-yarn add @ton/core
+docker-compose up install
 ```
+
+### 2: Build and bundle the library using the following command:
+
 ```bash
-npm install @ton/core
+docker-compose up build
 ```
-
-## Reference Documentation
-
-[Documentation](https://ton-org.github.io/ton-core/)
-
-
-## Acknowledgements
-
-This library is developed by the [Whales Corp.](https://tonwhales.com/) and maintained by [Dan Volkov](https://github.com/dvlkv).
-
-# License
-
-MIT
