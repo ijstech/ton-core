@@ -2,6 +2,7 @@
   "name": "@ton/core",
   "version": "0.60.0",
   "main": "dist/index.js",
+  "types": "types/index.d.ts",
   "repository": "https://github.com/ton-org/ton-core.git",
   "author": "Whales Corp. <developers@whalescorp.com>",
   "license": "MIT",

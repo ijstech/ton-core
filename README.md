@@ -13,5 +13,3 @@ docker-compose up install
 ```bash
 docker-compose up build
 ```
-
-After that copy the `lib`,  `dist` and `types` folders to @scom/ton-core to update ton-core package
