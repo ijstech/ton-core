@@ -5,6 +5,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
+/// <amd-module name="@ton/core" />
 export { Address, address } from './address/Address';
 export { ExternalAddress } from './address/ExternalAddress';
 export { ADNLAddress } from './address/ADNLAddress';

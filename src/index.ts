@@ -6,6 +6,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+///<amd-module name='@ton/core' />
+
 // Address
 export { Address, address } from './address/Address';
 export { ExternalAddress } from './address/ExternalAddress';
