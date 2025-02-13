@@ -63,13 +63,13 @@ export declare class Slice {
      * @param bits number of bits to read
      * @returns new BitString
      */
-    loadBits(bits: number): import("./BitString").BitString;
+    loadBits(bits: number): import("@ton/core").BitString;
     /**
      * Preload bits as a new BitString
      * @param bits number of bits to read
      * @returns new BitString
      */
-    preloadBits(bits: number): import("./BitString").BitString;
+    preloadBits(bits: number): import("@ton/core").BitString;
     /**
      * Load uint
      * @param bits number of bits to read
@@ -209,27 +209,27 @@ export declare class Slice {
      * Load internal Address
      * @returns Address
      */
-    loadAddress(): import("..").Address;
+    loadAddress(): import("@ton/core").Address;
     /**
      * Load optional internal Address
      * @returns Address or null
      */
-    loadMaybeAddress(): import("..").Address | null;
+    loadMaybeAddress(): import("@ton/core").Address | null;
     /**
      * Load external address
      * @returns ExternalAddress
      */
-    loadExternalAddress(): import("..").ExternalAddress;
+    loadExternalAddress(): import("@ton/core").ExternalAddress;
     /**
      * Load optional external address
      * @returns ExternalAddress or null
      */
-    loadMaybeExternalAddress(): import("..").ExternalAddress | null;
+    loadMaybeExternalAddress(): import("@ton/core").ExternalAddress | null;
     /**
      * Load address
      * @returns Address, ExternalAddress or null
      */
-    loadAddressAny(): import("..").Address | import("..").ExternalAddress | null;
+    loadAddressAny(): import("@ton/core").Address | import("@ton/core").ExternalAddress | null;
     /**
      * Load reference
      * @returns Cell

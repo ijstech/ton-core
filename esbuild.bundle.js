@@ -25,15 +25,35 @@ async function build() {
       target: 'esnext',
       inject: ['./buffer-shim.js'],
     })
-    .catch(() => process.exit(1));
+    .catch(() => process.exit(1))
 
   let content = await readFile('lib/index.js')
   content = `
-define("@scom/ton-core", ["require", "exports"], function (require, exports) {
+define("@ijstech/ton-core", ["require", "exports"], function (require, exports) {
   Object.defineProperty(exports, "__esModule", { value: true }); 
   ${content}
 });`
 
-  Fs.writeFileSync('lib/bundle.js', content)
+  Fs.writeFileSync('dist/index.js', content)
+
+  let typesContent = await readFile('types/index.d.ts')
+
+  const regex = /declare\smodule\s\"\@ton\/core\"\s\{\n(.*?)\n\}\n/gs
+  let mainContent = ''
+  while ((match = regex.exec(typesContent))) {
+    mainContent += match[1]
+  }
+
+  typesContent = typesContent.replace('/// <reference types="node" />', '')
+
+  typesContent = `${typesContent}
+/// <amd-module name="@ijstech/ton-core" />
+declare module "@ijstech/ton-core" {
+  ${mainContent}
 }
+`
+
+  Fs.writeFileSync('types/index.d.ts', typesContent)
+}
+
 build()
