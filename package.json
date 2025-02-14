@@ -1,14 +1,16 @@
 {
   "name": "@ton/core",
   "version": "0.60.0",
-  "main": "dist/index.js",
   "types": "types/index.d.ts",
-  "repository": "https://github.com/ton-org/ton-core.git",
+  "main": "lib/index.js",
+  "plugin": "dist/index.js",
+  "repository": "https://github.com/ijstech/ton-core.git",
   "author": "Whales Corp. <developers@whalescorp.com>",
   "license": "MIT",
   "files": [
     "dist",
-    "src"
+    "types",
+    "lib"
   ],
   "scripts": {
     "docs": "rm -fr docs && typedoc src/index.ts",

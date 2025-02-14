@@ -239,3 +239,7 @@ export class Cell {
         return beginCell().storeSlice(this.asSlice());
     }
 }
+
+export {
+    CellType
+}
