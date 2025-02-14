@@ -99,3 +99,4 @@ export declare class Cell {
      */
     asBuilder(): import("./Builder").Builder;
 }
+export { CellType };

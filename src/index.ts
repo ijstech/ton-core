@@ -22,8 +22,7 @@ export { BitBuilder } from './boc/BitBuilder';
 // Cell
 export { Builder, beginCell } from './boc/Builder';
 export { Slice } from './boc/Slice';
-export { CellType } from './boc/CellType';
-export { Cell } from './boc/Cell';
+export { Cell, CellType } from './boc/Cell';
 export { Writable } from './boc/Writable';
 
 // Dict
@@ -45,7 +44,46 @@ export { TupleReader } from './tuple/reader';
 export { TupleBuilder } from './tuple/builder';
 
 // Types
-export * from './types/_export';
+export {
+    internal, external, comment ,
+    Account, loadAccount, storeAccount ,
+    AccountState, loadAccountState, storeAccountState ,
+    AccountStatus, loadAccountStatus, storeAccountStatus ,
+    AccountStatusChange, loadAccountStatusChange, storeAccountStatusChange ,
+    AccountStorage, loadAccountStorage, storeAccountStorage ,
+    OutActionSendMsg, OutActionSetCode, OutActionReserve, OutActionChangeLibrary, OutAction, loadOutAction, storeOutAction, loadOutList, storeOutList ,
+    CommonMessageInfo, CommonMessageInfoInternal, CommonMessageInfoExternalIn, CommonMessageInfoExternalOut, loadCommonMessageInfo, storeCommonMessageInfo ,
+    CommonMessageInfoRelaxed, CommonMessageInfoRelaxedExternalOut, CommonMessageInfoRelaxedInternal, loadCommonMessageInfoRelaxed, storeCommonMessageInfoRelaxed ,
+    ComputeSkipReason, loadComputeSkipReason, storeComputeSkipReason ,
+    CurrencyCollection, loadCurrencyCollection, storeCurrencyCollection ,
+    DepthBalanceInfo, loadDepthBalanceInfo, storeDepthBalanceInfo ,
+    ExtraCurrency, packExtraCurrencyCell, packExtraCurrencyDict, loadExtraCurrency, loadMaybeExtraCurrency, storeExtraCurrency ,
+    HashUpdate, loadHashUpdate, storeHashUpdate ,
+    MasterchainStateExtra, loadMasterchainStateExtra ,
+    Message, loadMessage, storeMessage ,
+    MessageRelaxed, loadMessageRelaxed, storeMessageRelaxed ,
+    SendMode ,
+    ReserveMode ,
+    ShardAccount, loadShardAccount, storeShardAccount ,
+    ShardAccountRef, ShardAccountRefValue, loadShardAccounts, storeShardAccounts ,
+    ShardIdent, loadShardIdent, storeShardIdent ,
+    ShardStateUnsplit, loadShardStateUnsplit ,
+    SimpleLibrary, loadSimpleLibrary, storeSimpleLibrary ,
+    LibRef, loadLibRef, storeLibRef ,
+    SplitMergeInfo, loadSplitMergeInfo, storeSplitMergeInfo ,
+    StateInit, loadStateInit, storeStateInit ,
+    StorageInfo, loadStorageInfo, storeStorageInfo ,
+    StorageUsed, loadStorageUsed, storeStorageUsed ,
+    StorageUsedShort, loadStorageUsedShort, storeStorageUsedShort ,
+    TickTock, loadTickTock, storeTickTock ,
+    Transaction, loadTransaction, storeTransaction ,
+    TransactionActionPhase, loadTransactionActionPhase, storeTransactionActionPhase ,
+    TransactionBouncePhase, TransactionBounceNoFunds, TransactionBounceNegativeFunds, TransactionBounceOk, loadTransactionBouncePhase, storeTransactionBouncePhase ,
+    TransactionComputeVm, TransactionComputePhase, TransactionComputeSkipped, loadTransactionComputePhase, storeTransactionComputePhase ,
+    TransactionCreditPhase, loadTransactionCreditPhase, storeTransactionCreditPhase ,
+    TransactionDescription, TransactionDescriptionGeneric, TransactionDescriptionMergeInstall, TransactionDescriptionMergePrepare, TransactionDescriptionSplitInstall, TransactionDescriptionSplitPrepare, TransactionDescriptionStorage, TransactionDescriptionTickTock, loadTransactionDescription, storeTransactionDescription ,
+    TransactionStoragePhase, loadTransactionStoragePhase, storeTransactionsStoragePhase 
+} from "./types/_export";
 
 // Contract
 export { Contract } from './contract/Contract';

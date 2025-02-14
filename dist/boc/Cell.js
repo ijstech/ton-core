@@ -7,9 +7,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Cell = void 0;
+exports.CellType = exports.Cell = void 0;
 const BitString_1 = require("./BitString");
 const CellType_1 = require("./CellType");
+Object.defineProperty(exports, "CellType", { enumerable: true, get: function () { return CellType_1.CellType; } });
 const Slice_1 = require("./Slice");
 const resolveExotic_1 = require("./cell/resolveExotic");
 const wonderCalculator_1 = require("./cell/wonderCalculator");
